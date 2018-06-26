@@ -9,9 +9,7 @@ public class Menu {
 	int price;
 	int kcal;
 	List<Menu>menu=new ArrayList<>();
-	public List<Menu> getMenu() {
-		return menu;
-	}
+
 
 	public void setMenu(List<Menu> menu) {
 		this.menu = menu;
@@ -26,17 +24,15 @@ public Menu(int seq ,String name ,int price ,int kcal){
 }
 	public void on(){
 	
-	for(int j=0;j<=menu.size();j++)
+
 		
 		for (int i=0;i<=menu.size();i++){
-			Menu m =menu.get(seq);
-			seq++;
-			System.out.println(m.getSeq()+")"+m.getName());
-			break;
+			Menu m =menu.get(i);
+			System.out.println(m.getSeq()+")"+m.getName()+" "+ getPrice()+" "+getKcal() );		
 		}
-
 	}
-	 
+	
+	
 	
 	public int getSeq() {
 		return seq;
