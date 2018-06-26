@@ -23,10 +23,11 @@ try {
 		int price=Integer.parseInt(token[2]);
 		int kcal=Integer.parseInt(token[3]);
 		m.menu.add(new Menu(seq,name,price,kcal));
-		m.on();
+		
 		
 		line = in.readLine();
 	}
+	m.on();
 } catch (FileNotFoundException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
